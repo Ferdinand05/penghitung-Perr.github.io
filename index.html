@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Program Penghitungan Per</title>
+</head>
+<body>
+    
+    <nav>
+
+    </nav>
+
+    <header class="text-md-center container">
+        <h1 class="text-md-center">Program Penghitungan Per</h1>
+
+        <ul>
+            <li class="text-center btn btn-info"><a href="#perTekan">Per Tekan</a></li>
+            <li class="text-center btn btn-primary"><a href="#perTarik">Per Tarik</a></li>
+        </ul>
+
+    </header>
+    <div class="clear"></div>
+
+    <div class="container">
+        
+        <div class="jumbotron" id="perTekan">
+            <h2 class="text-center">Per Tekan </h2> 
+
+        <section id="lilitan">
+
+            <p class="font-weight-bold">#Lilitan - Panjang / (Ukuran kawat + Hang)</p>
+            <p class="font-weight-bold info-berat"> #Berat - 3,14 * Lingkar Luar * Lilitan </p>
+            
+            <form class="lilitan">
+            <label for="panjang">Panjang :</label>
+            <div class="input-group">    
+                <input type="number" class="form-control" name="panjang" id="panjang" placeholder="Masukkan Panjang..">
+            </div>
+
+            <label for="ukuran-kawat">Ukuran Kawat :</label>
+            <div class="input-group">   
+                <input type="number" class="form-control" name="ukuran-kawat" id="ukuran-kawat" placeholder="Masukkan Ukuran Kawat">
+            </div>
+
+            <label for="hang">Hang :</label>
+            <div class="input-group">
+                <input type="number" name="hang" id="hang" placeholder="Masukkan Nilai Hang.." class="form-control">
+            </div>
+
+            <label for="lingkar-luar">Lingkar Luar</label>
+            <div class="input-group">
+                <input type="number" name="lingkar-luar" id="lingkar-luar" class="form-control" placeholder="Masukkan Lingkar Luar...">
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-primary" id="btn-hasil-lilitan">Submit</button>
+            <br><br>
+            <h3>Hasil Lilitan : <span class="hasil-lilitan"></span> Lilit</h3>
+            <h3>Hasil Berat : <span class="hasil-berat"></span> Milimeter</h3>
+            </form>
+            
+        </section>
+        </div>
+        
+
+        <!-- !Per Tarik -->
+        <div class="jumbotron" id="perTarik">
+            <h2 class="text-center">Per Tarik </h2> 
+
+        <section id="lilitan">
+
+            <p class="font-weight-bold">#Lilitan - Panjang / + 2</p>
+            <p class="font-weight-bold info-berat"> #Berat - 3,14 * Lingkar Luar * Lilitan </p>
+            
+            <form class="lilitan">
+            <label for="panjang">Panjang :</label>
+            <div class="input-group">    
+                <input type="number" class="form-control" name="panjang" id="panjang-pt" placeholder="Masukkan Panjang..">
+            </div>
+
+            <label for="ukuran-kawat">Ukuran Kawat :</label>
+            <div class="input-group">   
+                <input type="number" class="form-control" name="ukuran-kawat" id="ukuran-kawat-pt" placeholder="Masukkan Ukuran Kawat">
+            </div>
+
+            <label for="hang">Hang :</label>
+            <div class="input-group">
+                <input type="number" name="hang" id="hang-pt" placeholder="Masukkan Nilai Hang.." class="form-control">
+            </div>
+
+            <label for="lingkar-luar">Lingkar Luar</label>
+            <div class="input-group">
+                <input type="number" name="lingkar-luar" id="lingkar-luar-pt" class="form-control" placeholder="Masukkan Lingkar Luar...">
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-danger" id="btn-hasil-lilitan-pt">Submit</button>
+            <br><br>
+            <h3>Hasil Lilitan : <span class="hasil-lilitan-pt"></span> Lilit</h3>
+            <h3>Hasil Berat : <span class="hasil-berat-pt"></span> Milimeter</h3>
+            </form>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="./Bootstrap4/js/jquery-3.5.1.min.js"></script>
+    <script src="./Bootstrap4/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
